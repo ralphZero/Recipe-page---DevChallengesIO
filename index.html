@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=5"/>
+    <link rel="icon" href="devchallenges.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css"/>
+    <title>Recipe Page</title>
+  </head>
+  <body>
+    <header class="p-3">
+      <h1>classic cheesecake recipe</h1>
+      <div class="desc">
+        <img class="desc--img" src="6dots.svg" alt="6dots"/>
+        <div class="desc--text desc--text--color">Look no further for a creamy and ultra smooth classic cheesecake recipe! Paired with a buttery graham cracker crust, no one can deny its simple decadence. For the best results, bake in a water bath.</div>
+      </div>
+    </header>
+    <div><!--this is for centering with body for pc and tablets-->
+      <div class="banner">
+        <img class="banner--img" src="photo1.png" alt="cheesecake"/>
+      </div>
+      <section>
+        <div class="info p-3">
+          <div class="info--block">
+            <div class="info--block info--block--item">
+              <span class="material-icons text-orange">local_dining</span>
+              <div class="info--item--col">
+                <div class="info--item--top">yields</div>
+                <div class="info--item--bottom">12 servings</div>
+              </div>
+            </div>
+          </div>
+          <div class="info--block info--block--justify">
+            <div class="info--block info--block--item">
+              <span class="material-icons text-gray2">query_builder</span>
+              <div class="info--item--col">
+                <div class="info--item--top">prep time</div>
+                <div class="info--item--bottom">45 minutes</div>
+              </div>
+            </div>
+            <div class="info--block info--block--item">
+              <span class="material-icons text-gray2">query_builder</span>
+              <div class="info--item--col">
+                <div class="info--item--top">cook Time</div>
+                <div class="info--item--bottom">1 hour</div>
+              </div>
+            </div>
+            <div class="info--block info--block--item">
+              <span class="material-icons text-gray2">query_builder</span>
+              <div class="info--item--col">
+                <div class="info--item--top">total time</div>
+                <div class="info--item--bottom">7,75 hours</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="recipe p-3">
+          <div class="recipe--block"><!--Ingredients-->
+            <h2 class="recipe--block--title">Ingredients</h2>
+            <div>
+              <h3 class="recipe--block--subtitle">Graham Cracker Crust</h3>
+              <div class="recipe--block--group" id="recipe1">
+                <!--get with javascript-->
+                <div class="recipe--block--content">
+                  <input class="recipe--block--content--checkbox" type="checkbox" name="__check" id="__check"/>
+                  <span class="recipe--block--content--text">1 and 1/2 cups (150g) graham cracker crumbs (about 10 full sheet graham crackers)</span>
+                </div>
+                <!---->
+              </div>
+            </div>
+            <div>
+              <h3 class="recipe--block--subtitle">Cheesecake</h3>
+              <div class="recipe--block--group"  id="recipe2">
+                <!--get with javascript-->
+                <div class="recipe--block--content">
+                  <input class="recipe--block--content--checkbox" type="checkbox" name="__check" id="__check"/>
+                  <span class="recipe--block--content--text">1 and 1/2 cups (150g) graham cracker crumbs (about 10 full sheet graham crackers)</span>
+                </div>
+                <!---->
+              </div>
+            </div>
+          </div>
+          <div class="recipe--block"><!--Instructions-->
+            <h2 class="recipe--block--title">Instructions</h2>
+            <div class="recipe--block--group" id="instructions">
+              <!--get with javascript-->
+              <div class="recipe--block--content">
+                <div class="recipe--block--content--index">
+                  <span>1</span>
+                </div>
+                <span class="recipe--block--content--text">
+                  1 and 1/2 cups (150g) graham cracker crumbs (about 10 full sheet graham crackers)
+                </span>
+              </div>
+              <!---->
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
