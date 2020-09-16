@@ -71,6 +71,17 @@ header h1{
 /*end Info block*/
 /*recipe block*/
 .recipe{color: var(--gray1);}
+.recipe--block{padding: 3vw;}
+.recipe--block--dark{
+    background-color: var(--gray1);
+    color: #ffffff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.recipe--block--dark li{background: transparent !important;}
+.recipe--block--dark li:before{border: .3em solid transparent !important;}
+.recipe--block--dark li:hover{box-shadow: 0 0 15px #1a1a1a !important;}
+.recipe--block--dark--toggle{vertical-align: middle;margin-left: 1rem;margin-bottom: 5px;}
 .recipe--block--title{
     font-family: 'Playfair Display', serif;
     font-style: normal;
@@ -95,22 +106,65 @@ header h1{
     justify-items: start;
     column-gap: 0.3rem;
 }
-.recipe--block--content--checkbox{
-    border-radius: 50px;
-}
-.recipe--block--content--index span{
-    font-family: 'Playfair Display', serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 32px;
-    background: #F2994A;
-    padding: 0px 14px 6px;
-    border-radius: 6px;
-}.recipe--block--content--text{
-    font-family: 'Montserrat', sans-serif;w
+.recipe--block--content-checkable{cursor: pointer;}
+.recipe--block--content-checkable:hover input{cursor: pointer;}
+.recipe--block--content--checkbox{border-radius: 50px;transform: scale(1.3);}
+.recipe--block--content--checkbox:checked{background-color: var(--orange1);}
+.recipe--block--content--text{
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 20px;
 }
+.recipe--block--content--ol{
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    list-style: none;
+    padding-inline-start: 0.7em;
+    margin-top: 0;
+    counter-reset: li;
+}
+.content--ol--rounded li{
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    /*padding: .4em;*/
+    margin: .5em 0;
+    background: #ffffff;
+    text-decoration: none;
+    border-radius: .3em;
+    transition: all .3s ease-out
+}
+.content--ol--rounded li:hover{
+    background:#FAFAFA;
+    box-shadow: 0 0 15px #cecece;
+    border-radius: 1em;
+}
+
+.content--ol--rounded li:hover:before{
+    transform: rotate(360deg);
+}
+
+.content--ol--rounded li:before{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -1.3em;
+    top: 1.3rem;
+    margin-top: -1.3em;
+    background: #F2994A;
+    color: #ffffff;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid #fff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 15px;
+    transition: all .3s ease-out;
+}
+
