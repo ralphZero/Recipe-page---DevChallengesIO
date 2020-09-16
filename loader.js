@@ -34,6 +34,7 @@ function buildRecipeBlock(value){
     block_content.addEventListener('click', (e)=>{
         let checkbox = e.currentTarget.firstChild;
         checkbox.checked = checkbox.checked ? false : true;
+        if(e.target.nodeName == 'INPUT'){checkbox.checked = checkbox.checked ? false : true;}
     }, false);
     let block_content_checkbox = document.createElement('input');
     block_content_checkbox.type = 'checkbox';

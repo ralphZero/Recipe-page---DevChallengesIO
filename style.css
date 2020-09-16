@@ -82,7 +82,7 @@ header h1{
 .recipe--block--dark li{background: transparent !important;}
 .recipe--block--dark li:before{border: .3em solid transparent !important;}
 .recipe--block--dark li:hover{box-shadow: 0 0 15px #1a1a1a !important;}
-.recipe--block--dark--toggle{vertical-align: middle;margin-left: 1rem;margin-bottom: 5px;}
+.recipe--block--dark--toggle{vertical-align: middle;margin-left: 1rem;margin-bottom: 5px;cursor: pointer;}
 .recipe--block--title{
     font-family: 'Playfair Display', serif;
     font-style: normal;
